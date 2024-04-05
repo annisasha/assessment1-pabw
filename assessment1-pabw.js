@@ -6,14 +6,14 @@ let buku = [
   
   function cari() {
     let jumlahInput = parseInt(document.getElementById("jumlah").value);
-    let selectedBook = document.getElementById("buku").value;
+    let buku = document.getElementById("buku").value;
   
     if (jumlahInput === "" || isNaN(jumlahInput) || jumlahInput <= 0) {
       alert("Jumlah tidak valid atau kosong.");
     } else {
       let found = false;
       for (let i = 0; i < buku.length; i++) {
-        if (buku[i].nama === selectedBook) {
+        if (buku[i].nama === buku) {
           found = true;
           if (buku[i].jumlah < jumlahInput) {
             alert("Jumlah buku tidak tersedia.");
@@ -22,9 +22,6 @@ let buku = [
           }
           break;
         }
-      }
-      if (!found) {
-        alert("Buku tidak ditemukan.");
       }
     }
   }
