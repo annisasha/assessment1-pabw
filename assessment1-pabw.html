@@ -3,21 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Assessment 1 PABW</title>
 </head>
 <body>
-    <img src="foto.JPG" style="width: 7cm; height: 10cm;">
+    <img src="foto.JPG" style="width: 5cm; height: 8cm;">
     <p>Nama : Annisa Shafira Putri Puspita</p>
     <p>NIM : 6701223090</p>  
-
-    <form>
-    <input type="text" id="jumlah">
-    </form>
-    <select id="option"> <option value="sherlock">Sherlock</option>
+    
+    <br>
+    <h2>Program Pencarian Buku</h2>
+    <input type="number" id="jumlah" name="jumlah">
+    <select id="buku" name="buku"> 
+        <option value="sherlock">Sherlock</option>
         <option value="lupin">Lupin</option>
         <option value="aladin">Aladin</option> 
     </select>
-    <button type="button">Tombol</button>
-    
+    <button onclick="cari()">Cari</button>
+    <script src="assessment1-pabw.js"></script>
 </body>
+
 </html>
